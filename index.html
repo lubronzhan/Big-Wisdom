@@ -1,0 +1,178 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <title>Carousel Template · Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="http://getbootstrap.com/2.3.2/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/2.3.2/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="css/xuan.css" rel="stylesheet">
+        <link href="css/chart.css" rel="stylesheet">
+<!--         <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+<!--         <link href="css/bootstrap.css" rel="stylesheet"> -->
+    <style>
+
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="http://getbootstrap.com/2.3.2/assets/ico/favicon.png">
+  <style id="holderjs-style" type="text/css">.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}</style></head>
+
+  <body>
+
+
+
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse"  data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#">Big Wisdom</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse">
+              <ul class="nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                
+                <!-- Read about Bootstrap dropdowns at http://twbs.github.com/bootstrap/javascript.html#dropdowns -->
+
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          
+          <div class="container">
+
+            <div class="carousel-caption">
+              <h1>Stock Prediction</h1>
+              <p class="lead">Our website create a disruptive way to predict stock tendency in next three days.</p>
+            <!--   <a class="btn btn-large btn-inverse" style="margin-top:10px; color:white;" href="#">Sign up today</a> -->
+            </div>
+            <div class="carousel-caption search-bar">
+            <!-------this is the search bar------>
+              <div class="full-search-bar">
+                <ul class="item-stream unstyled search-input-stream">
+                  <li class="stream-item stream-header search-input-item">
+<!--                     <form class="form-inline search-form">
+                      <input class="xlarge ui-autocomplete-input" id="artist_search" name="q" type="text" placeholder="Company Name" autocomplete="off" value="" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+                      <a class="btn btn-large btn-inverse" id="artist_submit" href="#" onclick="get_stock_data()" role="button"></a> 
+
+                    </form> -->
+     
+                          <div  class="input-group col-md-9">
+                                <input id="artist_search" type="text" class="  search-query form-control" placeholder="Search">
+                                <span class="input-group-btn" style="
+    width: 3px;
+">
+                                    <button id="search-btn" class="btn btn-danger" type="button" >
+                                        <span id="artist_submit" class=" glyphicon glyphicon-search" onclick="get_stock_data()"></span>
+                                    </button>
+                                </span>
+                            </div>
+                  </li>
+                </ul>
+<!--                 <div class="search-status">
+                  <img src="/assets/circle_loader.gif" class="search-loader">
+                </div> -->
+
+              </div>
+            </div>
+          </div>
+          <div class="company-info">
+            <div>
+            <h1 id="company-title">Name</h1>
+            </div>
+            <div id="star-panel" >
+              
+            </div>
+            <div id="star-desc" style="display:none">
+              
+            </div>
+          </div>
+              <div id="stock-graph" style="min-width: 1000px; height: 400px; margin: auto; max; "></div>
+              </div>
+        </div>
+      </div>
+<!--       <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a> -->
+      <!---       stock graph -->
+
+    </div><!-- /.carousel -->
+
+    
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    
+
+
+      <!-- FOOTER -->
+      <footer >
+        <p style="text-align:center;">2014 tartanhacks</p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://getbootstrap.com/2.3.2/assets/js/jquery.js"></script>
+    <script src="http://getbootstrap.com/2.3.2/assets/js/bootstrap-transition.js"></script>
+    <script src="http://getbootstrap.com/2.3.2/assets/js/bootstrap-alert.js"></script>
+    <script src="http://getbootstrap.com/2.3.2/assets/js/bootstrap-modal.js"></script>
+    <script src="http://getbootstrap.com/2.3.2/assets/js/bootstrap-dropdown.js"></script>
+    <script src="http://getbootstrap.com/2.3.2/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="http://getbootstrap.com/2.3.2/assets/js/bootstrap-tab.js"></script>
+    <script src="http://getbootstrap.com/2.3.2/assets/js/bootstrap-tooltip.js"></script>
+    <script src="http://getbootstrap.com/2.3.2/assets/js/bootstrap-popover.js"></script>
+    <script src="http://getbootstrap.com/2.3.2/assets/js/bootstrap-button.js"></script>
+    <script src="http://getbootstrap.com/2.3.2/assets/js/bootstrap-collapse.js"></script>
+    <script src="http://getbootstrap.com/2.3.2/assets/js/bootstrap-carousel.js"></script>
+    <script src="http://getbootstrap.com/2.3.2/assets/js/bootstrap-typeahead.js"></script>
+    <script type="text/javascript" src="js/highstock.js"></script>
+    <script type="text/javascript" src="js/highcharts-more.js"></script>
+    <script type="text/javascript" src="js/modules/exporting.js"></script>
+    <script type="text/javascript" src="js/themes/dark-unica.js"></script>
+    <script type="text/javascript" src="js/getStockData.js"></script>
+    <script type="text/javascript" src="js/star-desc.js"></script>
+    <script src="http://getbootstrap.com/2.3.2/assets/js/holder/holder.js"></script>
+  
+</body></html>
